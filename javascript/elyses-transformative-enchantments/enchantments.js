@@ -66,14 +66,7 @@ export function sandwichTrick(deck) {
  * @returns {number[]} deck with only 2s
  */
 export function twoIsSpecial(deck) {
-  return deck.reduce(
-    (twosOnly, card) => {
-      if (card === 2){
-        twosOnly.push(card);
-      }
-      return twosOnly;
-    }, []
-  )
+  return deck.filter(card => card === 2)
 }
 
 /**
